@@ -2,7 +2,10 @@ name: Deploy Vite app to GitHub Pages
 on:
   push:
     branches: [ main ] # change if default is master
-
+    
+permissions:
+  contents: write
+  
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
